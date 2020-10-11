@@ -4,35 +4,35 @@ import (
 	"bytes"
 )
 
-func GetBlackMsg(msg []byte) []byte {
+func RenderMsgBlack(msg []byte) []byte {
 	return ColorMsg([]byte("\033[01;0m"), msg)
 }
 
-func GetRedMsg(msg []byte) []byte {
+func RenderMsgRed(msg []byte) []byte {
 	return ColorMsg([]byte("\033[01;31m"), msg)
 }
 
-func GetGreenMsg(msg []byte) []byte {
+func RenderMsgGreen(msg []byte) []byte {
 	return ColorMsg([]byte("\033[01;32m"), msg)
 }
 
-func GetYellowMsg(msg []byte) []byte {
+func RenderMsgYellow(msg []byte) []byte {
 	return ColorMsg([]byte("\033[01;33m"), msg)
 }
 
-func GetBlueMsg(msg []byte) []byte {
+func RenderMsgBlue(msg []byte) []byte {
 	return ColorMsg([]byte("\033[01;34m"), msg)
 }
 
-func GetMagantaMsg(msg []byte) []byte {
+func RenderMsgMaganta(msg []byte) []byte {
 	return ColorMsg([]byte("\033[01;35m"), msg)
 }
 
-func GetCyanMsg(msg []byte) []byte {
+func RenderMsgCyan(msg []byte) []byte {
 	return ColorMsg([]byte("\033[01;36m"), msg)
 }
 
-func GetWhiteMsg(msg []byte) []byte {
+func RenderMsgWhite(msg []byte) []byte {
 	return ColorMsg([]byte("\033[01;37m"), msg)
 }
 

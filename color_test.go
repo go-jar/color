@@ -6,11 +6,12 @@ import (
 )
 
 func TestColor(t *testing.T) {
-	fmt.Println(string(GetBlackMsg([]byte("Black"))))
-	fmt.Println(string(GetRedMsg([]byte("Red"))))
-	fmt.Println(string(GetGreenMsg([]byte("Green"))))
-	fmt.Println(string(GetBlueMsg([]byte("Blue"))))
-	fmt.Println(string(GetMagantaMsg([]byte("Maganta"))))
-	fmt.Println(string(GetCyanMsg([]byte("Cyan"))))
-	fmt.Println(string(GetWhiteMsg([]byte("White"))))
+	fmt.Println(string(RenderMsgBlack([]byte("Black"))))
+	fmt.Println(string(RenderMsgRed([]byte("Red"))))
+	fmt.Println(string(RenderMsgGreen([]byte("Green"))))
+	fmt.Println(string(RenderMsgYellow([]byte("Yellow"))))
+	fmt.Println(string(RenderMsgBlue([]byte("Blue"))))
+	fmt.Println(string(RenderMsgMaganta([]byte("Maganta"))))
+	fmt.Println(string(RenderMsgCyan([]byte("Cyan"))))
+	fmt.Println(string(RenderMsgWhite([]byte("White"))))
 }
